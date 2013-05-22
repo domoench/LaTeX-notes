@@ -60,11 +60,24 @@
 
 \section{Scope}
 
-The global namespace is available as a global object. The \emph{this} keyword intitally
+\paragraph{} The global namespace is available as a global object. The \emph{this} keyword intitally
 references this object.
 
-\subsection{A subsection}
+\paragraph{Q:} Generally global variables are bad, so why would you need to use the global scope?\\
+A: To interact between seperate program components. To detect features of the host
+environment.
 
-More text.
+\paragraph{Q:} How can you accidently create a global variable within a function?\\
+A: By declaring without the \emph{var} keyword
+
+\paragraph{Q:} Scope chain vs. Prototype chain?\\
+A: 
+
+\section{Closures}
+
+\paragraph{General Idea of Closures} Functions that store references to variables from their
+containing/enclosing scopes. State hidden within behavior.
+\paragraph{} Closures can update variables from enclosing scopes.
+Inner functions contain the scope of parent functions even if the parent function has returned.
 
 \end{document}
