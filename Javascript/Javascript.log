@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  22 MAY 2013 17:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  23 MAY 2013 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,29 +565,43 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 LaTeX Warning: No \author given.
 
-[1
+(./Javascript.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 1.
+)
+\tf@toc=\write3
+\openout3 = `Javascript.toc'.
+
+ [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Javascript.aux) ) 
+Overfull \hbox (13.85689pt too wide) in paragraph at lines 88--92
+ \OT1/cmss/m/n/10.95 Q:[] \OT1/cmr/m/n/10.95 What if I want to call func-tion \
+OT1/cmr/m/it/10.95 f \OT1/cmr/m/n/10.95 as a method of ob-ject \OT1/cmr/m/it/10
+.95 o\OT1/cmr/m/n/10.95 , but \OT1/cmr/m/it/10.95 f \OT1/cmr/m/n/10.95 is not a
+ method/property
+ []
+
+[2] [3] (./Javascript.aux) ) 
 Here is how much of TeX's memory you used:
- 4111 strings out of 493488
- 62019 string characters out of 3141326
- 128131 words of memory out of 3000000
- 7362 multiletter control sequences out of 15000+200000
- 9434 words of font info for 33 fonts, out of 3000000 for 9000
+ 4120 strings out of 493488
+ 62153 string characters out of 3141326
+ 130131 words of memory out of 3000000
+ 7368 multiletter control sequences out of 15000+200000
+ 10958 words of font info for 38 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,6n,43p,236b,182s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmss10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmss12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti10.pfb>
-Output written on Javascript.pdf (1 page, 63279 bytes).
+ 44i,10n,43p,236b,188s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmss10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmss12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb>
+Output written on Javascript.pdf (3 pages, 78203 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -58,6 +58,8 @@
 \begin{document}
 \maketitle
 
+\tableofcontents
+
 \section{Scope}
 
 \paragraph{} The global namespace is available as a global object. The \emph{this} keyword intitally
@@ -73,11 +75,75 @@ A: By declaring without the \emph{var} keyword
 \paragraph{Q:} Scope chain vs. Prototype chain?\\
 A: 
 
+\section{Functions}
+
+\subsection{General}
+
+\paragraph{} A function is a function. A method is a function that is an object's property. Constructor
+functions are invoked with \emph{new}.
+
+Within a method \emph{this} is a reference to invoking object (\emph{receiver}), not the defining object. In non-method
+functions \emph{this} refers to the global object.
+
+\paragraph{Q:} What if I want to call function \emph{f} as a method of object \emph{o}, but \emph{f} is not a
+method/property of \emph{o}?\\
+A: Use \emph{call}, a method every function (including \emph{f}) posesses. You can pass in your desired
+\emph{reciever} object along with arguments.
+
+\paragraph{Q:} What if I want to extract a function's method and pass it to a higher order function?
+A: Use bind to prevent the incorrect reciever prob
+
+\subsection{Callbacks}
+
+\paragraph{Overview} Function\emph{b} is passed into function \emph{a} as an argument and \emph{a}
+executes \emph{b} at the end of its body. The main consideration in using callbacks is asynchronous-ness.
+
+
 \section{Closures}
 
-\paragraph{General Idea of Closures} Functions that store references to variables from their
+\paragraph{Overview} Functions that store references to variables from their
 containing/enclosing scopes. State hidden within behavior.
-\paragraph{} Closures can update variables from enclosing scopes.
-Inner functions contain the scope of parent functions even if the parent function has returned.
+
+\paragraph{} Closures can update variables from enclosing scopes. Inner functions contain the scope of parent functions even if the parent function has returned.
+
+\section{Operators}
+
+\paragraph{Q:} == vs === ?
+
+\section{Libraries}
+
+\subsection{underscore.js}
+
+\paragraph{Overview} A bunch of functions to make javascript more functiontional - provides map, reduce,
+filter, etc.
+
+\subsection{require.js}
+
+\paragraph{Overview} To write modular javascript while optimizing by reducing HTTP requests for js
+resources.
+
+\paragraph{Modules} Are scoped so they don't pollute the global namespace. A good description of the
+Javascript module pattern at \emph{http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html}
+
+\paragraph{} Each module file is of the basic form define( STUFF ); Where STUFF parameters can include 
+dependencies (other modules) and the definition of an object literal or function. RequireJS figures out all
+dependencies
+
+
+\subsection{prototype.js}
+
+\subsection{backbone.js}
+
+\paragraph{Overview} Client-side MVC.
+
+\paragraph{Models} Data/State is represented as \emph{Models}. When a model gets changed it fires a \emph{change}
+event. All Views that display that model's state update themselves in response to the change.
+
+\paragraph{Collections} Ordered sets of models
+
+\paragraph{Views}
+
+
+
 
 \end{document}
